@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Jura|Ubuntu|Poiret+One');
+/*font-family: 'Ubuntu';
+font-family: 'Jura';
+font-family: 'Poiret One';
+*/
+.cbalink{
+  display: none;
+}
+.top{
+  background-image: url(../img/up.svg);
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-size: cover;
+}
+body::-webkit-scrollbar { width: 0; }
+body { -ms-overflow-style: none; }
+body { overflow: -moz-scrollbars-none; }
+body{
+  border: 0;
+  margin: 0;
+  font-family: 'Ubuntu';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+.marginadd{
+  margin: 0 15%;
+}
+.imgback{
+  color: #ffffff;
+  padding: 15vmin 0;
+  background-image:url(../img/2.jpg);
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+}
+.info{
+  background-image:url(../img/11.jpg);
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  height: 100vmin;
+  position: relative;
+}
+.backtxt{
+  font-family: 'Poiret One';
+  position: absolute;
+  max-width: 910px;
+  text-align: center;
+  color: #fff;
+  left: calc(50% - 455px);
+  top: calc(50% - 143px);
+  height: 286px;
+}
+.namec{
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 70px;
+}
+.descc{
+  font-size: 40px;
+}
+.logname{
+  color: #f74b4b;
+  cursor: default;
+  font-family: 'Jura';
+  font-weight: 600;
+  line-height: 40px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.logoimg{
+  vertical-align: middle;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.center{
+  text-align: center;
+}
+.cell{
+  display: inline-block;
+}
+.cell h2,.cell p,.cell div input,.cell button{
+  padding: 0;
+  margin: 5px 0;
+}
+.history,.zak{
+  color: #2c3e50;
+  width: 50%;
+  padding: 15vmin 0;
+  margin: 0 auto;
+}
+.zak{
+  padding: 7vmin 0 13vmin 0;
+}
+.history div,.zak div{
+  font-size: 20px;
+}
+.history h2,.zak h2{
+  margin: 0 0 5vmin 0;
+}
+.history h2:before, .history h2:after, .zak h2:before, .zak h2:after{
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  height: 1px;
+  padding: 5px;
+  vertical-align: middle;
+  background: #2c3e50;
+  background-clip: content-box;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.history div img{
+  vertical-align: middle;
+  margin: 5px;
+}
+.cell img{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+  vertical-align: middle;
+    margin: 10px;
+}
+.zakaz{
+  margin-top: 3vmin;
+  background-image:url(../img/22.jpg);
+  background-position: bottom;
+  padding: 10px;
+}
+.label{
+  width: calc(100% - 80px);
+  margin: 10px;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 15px;
+  font-family: 'Jura';
+  background: rgba(240, 255, 255, 0.6);
+  outline: none;
+  border: solid 3px rgba(0, 0, 0, 0.0);
+}
+.label:hover{
+  border: solid 3px #00B5B5
+}
+.label:focus{
+  color: rgba(240, 255, 255, 0.9);
+  background: rgba(240, 255, 255, 0.3);
+  border: solid 3px #00B5B5
+}
+.zakaz textarea{
+  resize: none;
+  height: 150px;
+}
+.des{
+  margin: 20px 15px;
+  color: #fff;
+  font-family: 'Jura'
+}
+.btn{
+  width: 235px;
+  font-family: 'Jura';
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px 0;
+  color: rgba(240, 255, 255, 0.9);
+  border: solid 2px rgba(240, 255, 255, 0.9);
+  background: none;
+  margin-bottom: 10px;
+  outline: none
+}
+.btn:hover,.btn:focus{
+  color: #00B5B5;
+  border-color: #00B5B5;
+}
+::-webkit-input-placeholder {color:#2c3e50;}
+::-moz-placeholder          {color:#2c3e50;}
+:-moz-placeholder           {color:#2c3e50;}
+:-ms-input-placeholder      {color:#2c3e50;}
+.cell div div{
+  font-size: 25px;
+  font-family: 'Jura';
+  line-height: 40px;
+}
+@media screen and (min-width: 2500px) {
+  .logo img{
+    width: 80px;
+    height: 80px;
+  }
+  .main-menu li a{
+    margin: 25px 20px 25px 10%;
+    font-size: 25px;
+  }
+  .namec {
+    font-size: 85px;
+  }
+  .descc {
+    font-size: 50px;
+  }
+  .backtxt {
+    max-width: 1150px;
+    left: calc(50% - 575px);
+    top: calc(50% - 180px);
+    height: 360px;
+  }
+  .history h2, .zak h2, h2 {
+    margin: 0 0 50px 0;
+    font-size: 50px;
+  }
+  .history div, .zak div, .cell div, .label, .btn, .cell div div, .footer {
+    font-size: 33px;
+  }
+  .cell img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+  .btn {
+    width: 325px;
+  }
+  .label{
+    margin: 25px;
+  }
+  .zakaz{
+    padding: 25px;
+  }
+  .top {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media
+@media screen and (max-width: 1024px) {
+  .info{
+    background-image:url(../img/1.jpg);
+  }
+  .imgback{
+    background-image:url(../img/22.jpg);
+    padding: 5vmin 0;
+  }
+  h1{
+    font-size: 21px;
+  }
+  .backtxt {
+    max-width: 530px;
+    left: calc(50% - 265px);
+    top: calc(50% - 95px);
+    height: 190px;
+  }
+  .descc {
+    font-size: 23px;
+  }
+  .namec {
+    font-size: 50px;
+  }
+  .history, .zak {
+    width: 70%;
+  }
+  .cell img{
+    width: 90px;
+    height: 90px;
+  }
+  .cell {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .cell img{
+    width: 90px;
+    height: 90px;
+  }
+  .namec{
+    font-size: 40px;
+  }
+  .descc{
+    font-size: 15px;
+  }
+  .backtxt{
+    position: absolute;
+    max-width: 312px;
+    left: calc(50% - 156px);
+    top: calc(50% - 67px);
+    height: 134px;
+  }
+  .history div,.zak div{
+    font-size: 15px;
+  }
+  .menu{
+    margin: 0;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .btnmenu{
+    float: none;
+  }
+  .history,.zak{
+    width: 95%;
+    margin: 15vmin auto;
+  }
+  .label{
+    margin: 10px;
+  }
+  .btn{
+    margin-top: 0;
+  }
+  .zakaz{
+    padding: 5px 0;
+  }
+  .zakaz textarea{
+    height: 70px;
+  }
+  .cell div div{
+    font-size: 20px;
+    font-family: 'Jura';
+    line-height: 30px;
+  }
+}
+	

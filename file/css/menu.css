@@ -1,0 +1,108 @@
+#menu-checkbox {
+  display: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  padding: 0;
+}
+.footer{
+  padding: 10vmin 7% 9vmin 7%;
+  background-image:url(../img/3.jpg);
+  background-position: right;
+  background-size: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Jura';
+}
+.copirate{
+  margin-left: 7%;
+  color: white;
+}
+.main-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 181, 181, 0.5);
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  display: none;
+}
+.main-menu li {
+  font-size: 1em;
+  display: block;
+  width: 100%;
+  font-family: 'Jura';
+  line-height: 25px;
+}
+.main-menu a:hover,.main-menu a:focus{
+  color: #00B5B5;
+}
+.main-menu a {
+  /* немного стилизуем ссылки */
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px 10px 10px 7%;
+}
+.toggle-button {
+  font-size: 20px;
+  padding: 20px 0 20px 7%;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+}
+.toggle-button:after {
+  content: attr(data-open);
+  display: block;
+}
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  display: block;
+}
+#menu-checkbox:checked + nav[role="navigation"] label {
+    background-color: rgba(0, 181, 181, 0.5);
+}
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close);
+}
+.logo{
+  position: absolute;
+  top: 10px;
+  right: 7%;
+}
+@media screen and (min-width: 640px) {
+  header{
+    padding: 10px 0;
+  }
+  .logo{
+    position: static;
+  }
+  nav{
+    margin: 0 15%;
+    width: calc(100% - 30%);
+  }
+  .main-menu a {
+      border: none;
+      color: #fff;
+    }
+    .toggle-button {
+      display: none;
+    }
+    .main-menu {
+      width: auto;
+      background: none;
+      padding: 0;
+      position: relative;
+      float: right;
+      display: block;
+    }
+    .main-menu li {
+      width: auto;
+      display: inline-block;
+    }
+    .footer{
+      font-size: 20px
+    }
+  }
