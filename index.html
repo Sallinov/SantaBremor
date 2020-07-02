@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="file/img/logo.png"/>
+  <link rel="stylesheet" type="text/css" href="file/css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="file/css/main.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  jQuery(function($){
+    $("#up").hide();
+      $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 10) {
+                $('#up').fadeIn();
+            } else {
+                $('#up').fadeOut();
+            }
+        });
+    });
+    $('a[href*="#"]').on('click.smoothscroll', function( e ){
+      var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+      if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
+      var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
+      if( ! $target.length ) return;
+      e.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 1500, 'swing', function(){
+      });
+    });
+  });
+  </script>
+  <title>Santa Bremor</title>
+</head>
+<body>
+<div class="info" id="top">
+  <header>
+  <input type="checkbox" id="menu-checkbox" />
+    <nav role="navigation">
+      <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Скрыть" onclick></label>
+      <ul class="main-menu" id="menu">
+        <li><a href="#history">история</a></li>
+        <li><a href="#productions">продукция</a></li>
+        <li><a href="#buy">ответ</a></li>
+        <li><a href="#locations">адреса</a></li>
+        <li><a href="#call">контакты</a></li>
+      </ul>
+      <div class="logo"><img src="file/img/logo.svg" width="40px" height="40px"/></div>
+    </nav>
+  </header>
+  <div class="backtxt">
+    <h1 class="namec">Санта Бремор</h1>
+    <div class="descc">
+      За более чем 20 лет компания «Санта Бремор» стала
+      лидирующим отечественным производителем и
+      самым узнаваемым брендом рыбной
+      категории в Беларуси.
+    </div>
+  </div>
+</div>
+<div class="history center" id="history">
+  <h2>История компании</h2>
+  <div>
+  Один из крупнейших производителей высококачественных продуктов питания в
+  Восточной Европе. Мировой лидер по переработке икры (мойвы, сельди, трески,
+  минтая, летучей рыбы, горбуши, икры лососевых рыб). Один из лидеров продаж
+  готовых к употреблению продуктов из рыбы и морепродуктов в России.
+  Сегодня компания «Санта Бремор» - это около 5 000 профессионалов,
+  объединенных общей целью – стать лучшими в своем деле.
+  </div>
+</div>
+<div class="imgback center" id="productions">
+  <h2>Наша продукция:</h2>
+  <div class="cell">
+    <img src="file/img/m.svg" width="120vmin" height="120vmin"/>
+    <div>Мороженное</div>
+  </div>
+  <div class="cell">
+    <img src="file/img/mp.svg" width="120vmin" height="120vmin"/>
+    <div>Морепродукты</div>
+  </div>
+  <div class="cell">
+    <img src="file/img/s.svg" width="120vmin" height="120vmin"/>
+    <div>Салаты</div>
+  </div>
+  <div class="cell">
+    <img src="file/img/w.svg" width="120vmin" height="120vmin"/>
+    <div>Воды</div>
+  </div>
+  <div class="cell">
+    <img src="file/img/pf.svg" width="120vmin" height="120vmin"/>
+    <div>Полуфабрикаты</div>
+  </div>
+  <div class="cell w33">
+    <img src="file/img/e.svg" width="120vmin" height="120vmin"/>
+    <div>HoReCa</div>
+  </div>
+</div>
+<div class="zak center" id="buy">
+  <h2>Обратная связь</h2>
+  <form class="zakaz" id="form">
+    <div class="des">Вы можете получить консультацию, заполнив форму ниже</div>
+		<div><input type="text" class="label" name="name" id="name" placeholder="Имя" required/></div>
+		<div><input type="email" class="label" name="email" id="email" placeholder="Почта" required/></div>
+    <div><textarea type="text" class="label" name="text" id="text" placeholder="Текст" required/></textarea></div>
+		<div><input type="submit" class="btn" id="btn" value="Отправить запрос"></div>
+	</form>
+</div>
+<div class="imgback center" id="locations">
+  <h2>Местоположение магазинов и заводa:</h2>
+  <div class="cell">
+  <div>
+    <div>ул. Жукова 9</div>
+    <div>ул. Дубровская 15А</div>
+    <div>ул. Рябиновая 1А</div>
+    <div>ул. Писателя Смирнова 23</div>
+  </div>
+  </div>
+  <div class="cell">
+  <div>
+    <div>ул. Совецких Конституций 26/1</div>
+    <div>ул. Машенского 82</div>
+    <div>ул. Катин Бор 106А</div>
+    <div>ул. Катин Бор 106</div>
+  </div>
+  </div>
+</div>
+<div class="history center" id="call">
+  <h2>Как связаться с нами?</h2>
+  <div><img src="file/img/mailbox.svg" width="30px" height="30px/">224025, г.Брест, ул.Катин Бор 106, УНП200656098</div>
+  <div><img src="file/img/email.svg" width="30px" height="30px/">info@santa-bremor.com</div>
+  <div><img src="file/img/smartphone.svg" width="30px" height="30px/">+375 (162) 29-90-29</div>
+  <div><img src="file/img/phone.svg" width="30px" height="30px/">+375 (162) 29-85-71</div>
+</div>
+<p id="back-top">
+<a href="#" class="top" id="up"></a>
+</p>
+<div class="footer">
+  SantaBremor© 2017 Copyright Holder All Rights Reserved.
+</div>
+<script src="common.js"></script>
+</body>
+</html>
+			
